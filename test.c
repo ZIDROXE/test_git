@@ -1,5 +1,29 @@
-echo"hello world"
-file="test"
-if [ -f $file ]; then
+#include <unistd.h>
 
-echo "hello "
+void	ft_putchar(char c)
+{
+	write (1, &c, 1);
+	}
+
+	void	ft_putnbr(int nb)
+	{
+		long	nu;
+
+			nu = nb;
+				if (nu < 0)
+					{
+							ft_putchar('-');
+									nu = -nu;
+										}
+											if (nu / 10 != 0)
+													ft_putnbr(nu / 10);
+														ft_putchar(nu % 10 + '0');
+														}
+
+														int	main()
+														{
+															int	nb = 42;
+																ft_putnbr(nb);
+
+																	return (0);
+																	}
