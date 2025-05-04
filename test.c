@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-// انسخ هنا الدوال ft_strlen و ft_strrev
-
 int		ft_strlen(char *str)
 {
 	int i;
@@ -37,5 +35,3 @@ int main(void)
 	printf("Original: %s\n", str);
 	printf("Reversed: %s\n", ft_strrev(str));
 	return 0;
-}
-
